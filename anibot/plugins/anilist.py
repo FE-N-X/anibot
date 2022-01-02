@@ -212,7 +212,7 @@ async def flex_cmd(client: anibot, message: Message, mdata: dict):
         if find_gc is not None and 'user' in find_gc['cmd_list'].split():
             return
         if not len(query)==2:
-            k = await message.reply_text("Please give an anilist username to search about\nexample: /user Lostb053")
+            k = await message.reply_text("Please give an anilist username to search about\nexample: /user FENX97")
             await asyncio.sleep(5)
             return await k.delete()
         else:
